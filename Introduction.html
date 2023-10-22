@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 
 <head>
- 
-  <a href="index.html"><img src="GB_logo.png" width="35px" height="35px"></a>
-
-  <marquee><b><font size="0.1" color="#757574" face="Bahnschrift SemiBold"> The Best Coding Platform..!  </b></font>
-
-  </marquee>
-  
+  <div class="head">
+    <a href="index.html"><img src="GB_logo.png" width="35px" height="35px"></a>
+    <marquee>
+      <b><font size="0.1" color="#757574" face="Bahnschrift SemiBold"> The Best Coding Platform..!</font></b>
+    </marquee>
+  </div>
   
 <style>
 
@@ -22,14 +21,22 @@
 }
 body  {
   background-image: url("Background img 1.png");
-  background-color: #cccccc;
+  background-position:center;
+  background-attachment:fixed;
+}
+.head{
+  position: fixed;
+  background-color: black;
+  width: 100%;
+  height: 100px;
+  z-index: 1;
 }
 .container{
   display: flex;
 }
 nav{
-  position: relative;
-  top: 0;
+  position: fixed;
+  top: 80px;
   bottom: 0;
   height: 2000px;
   left: 0;
@@ -54,6 +61,11 @@ a{
 a:hover{
   background: black;
 }
+.content{
+  position: absolute;
+  top:80px;
+  left: 250px;
+}
 .main{
   position: relative;
   padding: 20px;
@@ -69,6 +81,9 @@ a:hover{
 h3{
   color: #a9a9ab;
   font-size: 25px;
+}
+h4{
+  color: #a9a9ab;
 }
 ol{	
   color: #999999;
@@ -106,6 +121,16 @@ p{
   padding: 95px;
   box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
 }
+.main-skills .card2{
+  width: 61%;
+  height: 525px;
+  margin: 5px;
+  background-image: url("Background img 2.jpg");
+  text-align: left;
+  border-radius: 30px;
+  padding: 95px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
 
 button{
   background: #4f5250;
@@ -123,6 +148,20 @@ button:hover{
   align-items: center;
   height: 30px; 
 }
+table,tr{
+	width: 550px;
+	height: 80px;
+    border: 1px solid;
+    cellpadding: 15px solid;
+	color: white;
+}
+th,td{
+  border: 1px solid;
+  color: #a9a9ab;
+  font-style: italic;
+  text-align: center;
+}
+
 
 </style>
   
@@ -130,10 +169,11 @@ button:hover{
   
 </head>
 <body>
+
   <div class="container">
     <nav>
       <ul>
-        <li>
+        <li><br>
         <center><span class="nav-item">HTML Tutorial</span></center>
         </li><br>
 		<li><a href="HTML Tutorial.html">HTML Home</span>
@@ -159,7 +199,7 @@ button:hover{
 		
       </ul>
     </nav>
-
+<div class="content">
     <section class="main">
       <div class="main-top">
         <h1>HTML Introduction</h1>
@@ -208,12 +248,85 @@ button:hover{
 	</section>
 	<div class="center">
 	<button><a href="GB Code Editor.html"><b>Try This !</b></a></button>
-	</div>
+	</div><br>
+	
+<h3>Example Explained</h3><br>
+	<ol type="1">
+    <li> The &lt;!DOCTYPE html&gt; declaration defines that this document is an HTML5 document. </li>
+	<li> The &lt;html&gt; element is the root element of an HTML page. </li>
+	<li> The &lt;head&gt; element contains meta information about the HTML page. </li>
+	<li> The &lt;title&gt; element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab). </li>
+	<li> The &lt;body&gt; element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc. </li>
+    <li> The &lt;h1&gt; element defines a large heading. </li>
+	<li> The &lt;p&gt; element defines a paragraph. </li>
+  </ol><br>
+  
+<h3>What is an HTML Element?</h3><br>
+<p> An HTML element is defined by a start tag, some content, and an end tag: </p>
+	<h4> &lt;tagname&gt; Content goes here... &lt;/tagname&gt; </h4>
+<p> The HTML element is everything from the start tag to the end tag: </p>
+	<h4>
+	&lt;h1&gt; My First Heading &lt;/h1&gt;<br>
+    &lt;p&gt; My first paragraph. &lt;/p&gt;<br>
+	</h4><br>
+	
+<section class="main">
+      <div class="main-skills">		
+		<div class="card2">
+		  <p>
+			
+<table>
+	<tr>
+		<th> Start Tag </th>
+		<th> Element content </th>
+		<th> End tag </th>
+	</tr>
+	<tr>
+		<td> &lt;h1&gt; </td>
+		<td> My First Heading </td>
+		<td> &lt;/h1&gt; </td>
+	</tr>
+	<tr>
+		<td> &lt;p&gt; </td>
+		<td> My first paragraph. </td>
+		<td> &lt;/p&gt; </td>
+	</tr>
+	<tr>
+		<td> &lt;br&gt; </td>
+		<td><italic> none </italic></td>
+		<td> none </td>
+	</tr>
+</table><br>
+			
+
+		  </P>
+		</div>  
+	  </div>
+</section>
+
+<h3>HTML History</h3><br>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
     </section>
   </div>
   
   	   
 
-
+</div>
 </body>
 </html>
