@@ -32,6 +32,10 @@ body  {
   height: 100px;
   z-index: 1;
 }
+.body{
+  position: fixed;
+  width: 100%;
+}
 h1{
   color: #b0b0b0;
   font-size: 40px;
@@ -50,17 +54,8 @@ a{
   width: 280px;
   padding: 10px;
 }
-
-.nav-item{
-  position: relative;
-  top: 12px;
-  margin-left: 10px;
-}
-
-
-
 .main{
-  position: relative;
+  position: center;
   padding: 30px;
   width: 100%;
 }
@@ -71,7 +66,6 @@ a{
 .main-skills .card{
   width: 100%;
   margin: 100px;
-  background-image: url("Background img 2.jpg");
   text-align: center;
   border-radius: 20px;
   padding: 45px;
@@ -99,17 +93,25 @@ a{
 .main-skills .card button:hover{
   background: #050505;
 }
+.card{
+  position: relative;
+  top: 200px;
+  width: 100%;
+  background-image: url("Background img 2.jpg");
+}
 
 
 </style>
   
 </head>
 <body>
+<div class="body">
 <br><br><br>
   <h1>CODING IS FUN!</h1>
   <marquee behavior="scroll" direction="down" Scrollamount="2">
   <h3> Scroll Down For Our Tutorials...</h3>
   </marquee>
+</div>
 
     <section class="main">
       <div class="main-skills">
