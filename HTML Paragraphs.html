@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <div class="head">
+    <a href="index.html"><img src="GB_logo.png" width="35px" height="35px"></a>
+    <marquee>
+      <b><font size="0.1" color="#757574" face="Bahnschrift SemiBold"> The Best Coding Platform..!</font></b>
+    </marquee>
+  </div>
+  
+<style>
+
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Calibri", sans-serif;
+}
+body  {
+  background-image: url("Background img 1.png");
+  background-position:center;
+  background-attachment:fixed;
+}
+.head{
+  position: fixed;
+  background-color: black;
+  width: 100%;
+  height: 100px;
+  z-index: 1;
+}
+.container{
+  display: flex;
+}
+nav{
+  position: fixed;
+  top: 80px;
+  bottom: 0;
+  height: 2000px;
+  left: 0;
+  background: #696969;
+  width: 250px;
+  overflow: hidden;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+a{
+  position: relative;
+  color: white;
+  font-size: 17px;
+  display: table;
+  width: 280px;
+  padding: 10px;
+}
+.nav-item{
+  position: relative;
+  top: 12px;
+  margin-left: 10px;
+  font-size: 30px;
+  text-decoration: underline;
+}
+a:hover{
+  background: black;
+}
+.content{
+  position: absolute;
+  top:80px;
+  left: 255px;
+}
+.main{
+  position: relative;
+  padding: 20px;
+  width: 100%;
+}
+.main-top{
+  display: flex;
+  width: 100%;
+  color: white;
+  font-size: 35px;
+  font-style: italic;
+  text-decoration: underline;
+}
+h3{
+  color: #a9a9ab;
+  font-size: 30px;
+}
+h4{
+  color: #a9a9ab;
+  font-size: 20px;
+}
+ol{	
+  color: #999999;
+  font-size: 25px;
+}
+p{
+  color: #999999;
+  font-size: 25px;
+}
+p2{
+  color: transparent;
+}
+
+.main-skills{
+  display: flex;
+  margin-top: 0px;
+}
+.main-skills .card{
+  width: 100%;
+  height: 75px;
+  margin: 5px;
+  background-image: url("Background img 3.jpg");
+  text-align: left;
+  border-radius: 30px;
+  padding: 12px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.main-skills .card p{
+  font-size: 20px;
+  color: #f7faf8;
+  font-style:  italic;
+}
+.main-skills .card1{
+  width: 100%;
+  height: 385px;
+  margin: 5px;
+  background-image: url("Background img 3.jpg");
+  text-align: left;
+  border-radius: 30px;
+  padding: 12px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.main-skills .card1 p{
+  font-size: 20px;
+  color: #f7faf8;
+  font-style:  italic;
+}
+.main-skills .card2{
+  width: 100%;
+  height: 165px;
+  margin: 5px;
+  background-image: url("Background img 3.jpg");
+  text-align: left;
+  border-radius: 30px;
+  padding: 12px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.main-skills .card2 p{
+  font-size: 20px;
+  color: #f7faf8;
+  font-style:  italic;
+}
+.main-skills .card3{
+  width: 100%;
+  height: 45px;
+  margin: 5px;
+  background-image: url("Background img 3.jpg");
+  text-align: left;
+  border-radius: 30px;
+  padding: 12px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.main-skills .card3 p{
+  font-size: 20px;
+  color: #f7faf8;
+  font-style:  italic;
+}
+.main-skills .card4{
+  width: 100%;
+  height: 175px;
+  margin: 5px;
+  background-image: url("Background img 3.jpg");
+  text-align: left;
+  border-radius: 30px;
+  padding: 12px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.main-skills .card4 p{
+  font-size: 20px;
+  color: #f7faf8;
+  font-style:  italic;
+}
+.main-skills .card5{
+  width: 100%;
+  height: 175px;
+  margin: 5px;
+  background-image: url("Background img 3.jpg");
+  text-align: left;
+  border-radius: 30px;
+  padding: 12px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.main-skills .card5 p{
+  font-size: 20px;
+  color: #f7faf8;
+  font-style:  italic;
+}
+button{
+  background: #4f5250;
+  padding: 0px 0px;
+  border-radius: 10px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+button:hover{
+  background: #07ede9;
+}
+.center {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  height: 30px; 
+}
+table,tr{
+	width: 550px;
+	height: 80px;
+    border: 1px solid;
+	color: white;
+}
+th,td{
+  border: 1px solid;
+  color: #a9a9ab;
+  font-style: italic;
+  text-align: center;
+}
+mark{
+  color: #48ff00;
+  background-color: transparent;
+}
+mark1{
+  color: #ff0000;
+  background-color: transparent;
+}
+
+
+</style>
+  
+  
+  
+</head>
+<body>
+
+
+  <div class="container">
+    <nav>
+      <ul>
+        <li><br>
+        <center><span class="nav-item"><b>HTML Tutorial</b></span></center>
+        </li><br>
+		<li><a href="HTML Tutorial.html">HTML Home</span>
+        </a></li>
+        <li><a href="Introduction.html">HTML Introduction</span>
+        </a></li>
+        <li><a href="HTML Basic Examples.html">HTML Basic Examples</span>
+        </a></li>
+        <li><a href="HTML Element.html">HTML Elements</span>
+        </a></li>
+        <li><a href="HTML Attributes.html">HTML Attributes</span>
+        </a></li>
+        <li><a href="HTML Headings.html">HTML Headings</span>
+        </a></li>
+        <li><a href="HTML Paragraphs.html">HTML Paragraphs</span>
+        </a></li>
+		<li><a href="HTML Text Formatting.html">HTML Text Formatting</span>
+        </a></li>
+		<li><a href="">HTML Comments</span>
+        </a></li>
+		<li><a href="">HTML Links</span>
+        </a></li>
+		
+      </ul>
+    </nav>
+<div class="content">
+    <section class="main">
+      <div class="main-top">
+        <h1>HTML Paragraphs</h1>
+      </div><br><br>
+	  
+<p> A paragraph always starts on a new line, and is usually a block of text. </p><br>
+
+<h3>HTML Paragraphs</h3><br>
+
+    <p>The HTML &lt;p&gt; element defines a paragraph.</p><br>
+    <p>A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph.</p><br>
+
+    <section class="main">
+      <div class="main-skills">
+        <div class="card">
+          <p><b>
+            
+              &lt;p&gt;This is a paragraph.&lt;/p&gt;<br>
+              &lt;p&gt;This is another paragraph.&lt;/p&gt;<br>
+  
+          </b></p>
+        </div><br>
+    </section> 
+    
+        <div class="center">
+        <button><a href="GB Code Editor.html"><b>Try This !</b></a></button>
+        </div><br>
+
+        <ol type="1">
+            <p2>111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</p2>
+        </ol><br>
+
+
+<h3>HTML Display</h3><br>
+
+<p>You cannot be sure how HTML will be displayed.</p><br>
+<p>Large or small screens, and resized windows will create different results.</p><br>
+<p>With HTML, you cannot change the display by adding extra spaces or extra lines in your HTML code.</p><br>
+<p>The browser will automatically remove any extra spaces and lines when the page is displayed:</p><br>
+
+    <section class="main">
+        <div class="main-skills">
+        <div class="card1">
+            <p><b>
+            
+                &lt;p&gt;<br>
+                This paragraph<br>
+                contains a lot of lines<br>
+                in the source code,<br>
+                but the browser<br>
+                ignores it.<br>
+                &lt;/p&gt;<br><br>
+
+                &lt;p&gt;<br>
+                This paragraph<br>
+                contains         a lot of spaces<br>
+                in the source         code,<br>
+                but the        browser<br>
+                ignores it.<br>
+                &lt;/p&gt;<br>
+
+            </b></p>
+        </div><br>
+    </section> 
+  
+      <div class="center">
+      <button><a href="GB Code Editor.html"><b>Try This !</b></a></button>
+      </div><br>
+
+<h3>HTML Horizontal Rules</h3><br>
+
+<p>The &lt;hr&gt; tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule.</p><br>
+<p>The &lt;hr&gt; element is used to separate content (or define a change) in an HTML page:</p><br>
+
+    <section class="main">
+        <div class="main-skills">
+        <div class="card2">
+            <p><b>
+            
+                &lt;h1&gt;This is heading 1&lt;/h1&gt;<br>
+                &lt;p&gt;This is some text.&lt;/p&gt;<br>
+                &lt;hr&gt;<br>
+                &lt;h2&gt;This is heading 2&lt;/h2&gt;<br>
+                &lt;p&gt;This is some text.&lt;/p&gt;<br>
+                &lt;hr&gt;<br>
+
+            </b></p>
+        </div><br>
+    </section> 
+
+    <div class="center">
+    <button><a href="GB Code Editor.html"><b>Try This !</b></a></button>
+    </div><br>
+
+<p>The &lt;hr&gt; tag is an empty tag, which means that it has no end tag.</p><br>
+
+<h3>HTML Line Breaks</h3><br>
+
+<p>The HTML &lt;br&gt; element defines a line break.</p><br>
+<p>Use &lt;br&gt; if you want a line break (a new line) without starting a new paragraph:</p><br>
+
+    <section class="main">
+        <div class="main-skills">
+        <div class="card3">
+            <p><b>
+            
+                &lt;h1&gt; This is &lt;br&gt; a paragraph &lt;br&gt; with line breaks. &lt;/p&gt;<br>
+
+            </b></p>
+        </div><br>
+    </section> 
+
+    <div class="center">
+    <button><a href="GB Code Editor.html"><b>Try This !</b></a></button>
+    </div><br>
+
+<p>The &lt;br&gt; tag is an empty tag, which means that it has no end tag.</p><br>
+
+<h3>The Poem Problem</h3><br>
+
+<p>This poem will display on a single line:</p>
+
+    <section class="main">
+        <div class="main-skills">
+        <div class="card4">
+            <p><b>
+            
+                &lt;p&gt;<br>
+                My Bonnie lies over the ocean.<br>
+                My Bonnie lies over the sea.<br>
+                My Bonnie lies over the ocean.<br>
+                My Bonnie lies over the ocean.<br>
+                &lt;/p&gt;<br>
+
+            </b></p>
+        </div><br>
+    </section> 
+
+    <div class="center">
+    <button><a href="GB Code Editor.html"><b>Try This !</b></a></button>
+    </div><br>
+
+<h3>Solution - The HTML &lt;pre&gt; Element</h3><br>
+
+<p>The HTML &lt;pre&gt; element defines preformatted text.</p><br>
+<p>The text inside a &lt;pre&gt; element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks:</p><br>
+
+    <section class="main">
+        <div class="main-skills">
+        <div class="card5">
+            <p><b>
+            
+                &lt;pre&gt;<br>
+                My Bonnie lies over the ocean.<br>
+                My Bonnie lies over the sea.<br>
+                My Bonnie lies over the ocean.<br>
+                My Bonnie lies over the ocean.<br>
+                &lt;/pre&gt;<br>
+
+            </b></p>
+        </div><br>
+    </section> 
+
+    <div class="center">
+    <button><a href="GB Code Editor.html"><b>Try This !</b></a></button>
+    </div><br><br><br><br><br>
+
+
+
+    <div class="center">
+      <button><a href="HTML Text Formatting.html"><b>HTML Text Formatting</b></a></button>
+      </div><br>
+
+
+    </section>
+  </div>
+</div>
+</body>
+</html>

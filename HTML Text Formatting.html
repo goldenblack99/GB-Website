@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <div class="head">
+    <a href="index.html"><img src="GB_logo.png" width="35px" height="35px"></a>
+    <marquee>
+      <b><font size="0.1" color="#757574" face="Bahnschrift SemiBold"> The Best Coding Platform..!</font></b>
+    </marquee>
+  </div>
+  
+<style>
+
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Calibri", sans-serif;
+}
+body  {
+  background-image: url("Background img 1.png");
+  background-position:center;
+  background-attachment:fixed;
+}
+.head{
+  position: fixed;
+  background-color: black;
+  width: 100%;
+  height: 100px;
+  z-index: 1;
+}
+.container{
+  display: flex;
+}
+nav{
+  position: fixed;
+  top: 80px;
+  bottom: 0;
+  height: 2000px;
+  left: 0;
+  background: #696969;
+  width: 250px;
+  overflow: hidden;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+a{
+  position: relative;
+  color: white;
+  font-size: 17px;
+  display: table;
+  width: 280px;
+  padding: 10px;
+}
+.nav-item{
+  position: relative;
+  top: 12px;
+  margin-left: 10px;
+  font-size: 30px;
+  text-decoration: underline;
+}
+a:hover{
+  background: black;
+}
+.content{
+  position: absolute;
+  top:80px;
+  left: 255px;
+}
+.main{
+  position: relative;
+  padding: 20px;
+  width: 100%;
+}
+.main-top{
+  display: flex;
+  width: 100%;
+  color: white;
+  font-size: 35px;
+  font-style: italic;
+  text-decoration: underline;
+}
+h3{
+  color: #a9a9ab;
+  font-size: 30px;
+}
+h4{
+  color: #a9a9ab;
+  font-size: 20px;
+}
+ol{	
+  color: #999999;
+  font-size: 25px;
+}
+p{
+  color: #999999;
+  font-size: 25px;
+}
+p2{
+  color: transparent;
+}
+
+.main-skills{
+  display: flex;
+  margin-top: 0px;
+}
+.main-skills .card{
+  width: 100%;
+  height: 95px;
+  margin: 5px;
+  background-image: url("Background img 3.jpg");
+  text-align: left;
+  border-radius: 30px;
+  padding: 12px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.main-skills .card p{
+  font-size: 20px;
+  color: #f7faf8;
+  font-style:  italic;
+}
+.main-skills .card1{
+  width: 100%;
+  height: 45px;
+  margin: 5px;
+  background-image: url("Background img 3.jpg");
+  text-align: left;
+  border-radius: 30px;
+  padding: 12px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.main-skills .card1 p{
+  font-size: 20px;
+  color: #f7faf8;
+  font-style:  italic;
+}
+.main-skills .card2{
+  width: 100%;
+  height: 45px;
+  margin: 5px;
+  background-image: url("Background img 3.jpg");
+  text-align: left;
+  border-radius: 30px;
+  padding: 12px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.main-skills .card2 p{
+  font-size: 20px;
+  color: #f7faf8;
+  font-style:  italic;
+}
+.main-skills .card3{
+  width: 100%;
+  height: 45px;
+  margin: 5px;
+  background-image: url("Background img 3.jpg");
+  text-align: left;
+  border-radius: 30px;
+  padding: 12px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.main-skills .card3 p{
+  font-size: 20px;
+  color: #f7faf8;
+  font-style:  italic;
+}
+.main-skills .card4{
+  width: 100%;
+  height: 45px;
+  margin: 5px;
+  background-image: url("Background img 3.jpg");
+  text-align: left;
+  border-radius: 30px;
+  padding: 12px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.main-skills .card4 p{
+  font-size: 20px;
+  color: #f7faf8;
+  font-style:  italic;
+}
+.main-skills .card5{
+  width: 100%;
+  height: 45px;
+  margin: 5px;
+  background-image: url("Background img 3.jpg");
+  text-align: left;
+  border-radius: 30px;
+  padding: 12px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.main-skills .card5 p{
+  font-size: 20px;
+  color: #f7faf8;
+  font-style:  italic;
+}
+.main-skills .card6{
+  width: 100%;
+  height: 45px;
+  margin: 5px;
+  background-image: url("Background img 3.jpg");
+  text-align: left;
+  border-radius: 30px;
+  padding: 12px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.main-skills .card6 p{
+  font-size: 20px;
+  color: #f7faf8;
+  font-style:  italic;
+}
+.main-skills .card7{
+  width: 100%;
+  height: 45px;
+  margin: 5px;
+  background-image: url("Background img 3.jpg");
+  text-align: left;
+  border-radius: 30px;
+  padding: 12px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.main-skills .card7 p{
+  font-size: 20px;
+  color: #f7faf8;
+  font-style:  italic;
+}
+.main-skills .card8{
+  width: 100%;
+  height: 45px;
+  margin: 5px;
+  background-image: url("Background img 3.jpg");
+  text-align: left;
+  border-radius: 30px;
+  padding: 12px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.main-skills .card8 p{
+  font-size: 20px;
+  color: #f7faf8;
+  font-style:  italic;
+}
+.main-skills .card9{
+  width: 100%;
+  height: 45px;
+  margin: 5px;
+  background-image: url("Background img 3.jpg");
+  text-align: left;
+  border-radius: 30px;
+  padding: 12px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.main-skills .card9 p{
+  font-size: 20px;
+  color: #f7faf8;
+  font-style:  italic;
+}
+.main-skills .card10{
+  width: 100%;
+  height: 45px;
+  margin: 5px;
+  background-image: url("Background img 3.jpg");
+  text-align: left;
+  border-radius: 30px;
+  padding: 12px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.main-skills .card10 p{
+  font-size: 20px;
+  color: #f7faf8;
+  font-style:  italic;
+}
+button{
+  background: #4f5250;
+  padding: 0px 0px;
+  border-radius: 10px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+button:hover{
+  background: #07ede9;
+}
+.center {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  height: 30px; 
+}
+table,tr{
+	width: 550px;
+	height: 80px;
+    border: 1px solid;
+	color: white;
+}
+th,td{
+  border: 1px solid;
+  color: #a9a9ab;
+  font-style: italic;
+  text-align: center;
+}
+mark{
+  color: #48ff00;
+  background-color: transparent;
+}
+mark1{
+  color: #ff0000;
+  background-color: transparent;
+}
+.ul{	
+  color: #999999;
+  font-size: 25px;
+}
+
+</style>
+  
+  
+  
+</head>
+<body>
+
+
+  <div class="container">
+    <nav>
+      <ul>
+        <li><br>
+        <center><span class="nav-item"><b>HTML Tutorial</b></span></center>
+        </li><br>
+		<li><a href="HTML Tutorial.html">HTML Home</span>
+        </a></li>
+        <li><a href="Introduction.html">HTML Introduction</span>
+        </a></li>
+        <li><a href="HTML Basic Examples.html">HTML Basic Examples</span>
+        </a></li>
+        <li><a href="HTML Element.html">HTML Elements</span>
+        </a></li>
+        <li><a href="HTML Attributes.html">HTML Attributes</span>
+        </a></li>
+        <li><a href="HTML Headings.html">HTML Headings</span>
+        </a></li>
+        <li><a href="HTML Paragraphs.html">HTML Paragraphs</span>
+        </a></li>
+		<li><a href="HTML Text Formatting.html">HTML Text Formatting</span>
+        </a></li>
+		<li><a href="">HTML Comments</span>
+        </a></li>
+		<li><a href="">HTML Links</span>
+        </a></li>
+		
+      </ul>
+    </nav>
+<div class="content">
+    <section class="main">
+      <div class="main-top">
+        <h1>HTML Comments</h1>
+      </div><br><br>
+	  
+<p> HTML contains several elements for defining text with a special meaning. </p><br>
+
+<h3>HTML Paragraphs</h3><br>
+
+    <section class="main">
+      <div class="main-skills">
+        <div class="card">
+          <p><b>
+            
+            &lt;p&gt;&lt;b&gt;This text is bold&lt;/b&gt;&lt;/p&gt;<br>
+            &lt;p&gt;&lt;i&gt;This text is italic&lt;/i&gt;&lt;/p&gt;<br>
+            &lt;p&gt;This is&lt;sub&gt; subscript&lt;/sub&gt; and &lt;sup&gt;superscript&lt;/sup&gt;&lt;/p&gt;<br>
+  
+          </b></p>
+        </div><br>
+    </section> 
+    
+        <div class="center">
+        <button><a href="GB Code Editor.html"><b>Try This !</b></a></button>
+        </div><br>
+
+        <ol type="1">
+            <p2>111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</p2>
+        </ol><br>
+
+<h3>HTML Formatting Elements</h3><br>
+
+<p>Formatting elements were designed to display special types of text:</p>
+
+<div class="ul">
+    <ul>
+        <li>&lt;b&gt; - Bold text</li>
+        <li>&lt;strong&gt; - Important text</li>
+        <li>&lt;i&gt; - Italic text</li>
+        <li>&lt;em&gt; - Emphasized text</li>
+        <li>&lt;mark&gt; - Marked text</li> 
+        <li>&lt;small&gt; - Smaller text</li>
+        <li>&lt;del&gt; - Deleted text</li>
+        <li>&lt;ins&gt; - Inserted text</li>
+        <li>&lt;sub&gt; - Subscript text</li>  
+        <li>&lt;sup&gt; - Superscript text</li>       
+    </ul>
+</div><br>       
+
+<h3>HTML &lt;b&gt; and &lt;strong&gt; Elements</h3><br>
+
+<p>The HTML &lt;b&gt; element defines bold text, without any extra importance.</p>
+
+
+    <section class="main">
+        <div class="main-skills">
+        <div class="card1">
+            <p><b>
+            
+            &lt;b&gt;This text is bold&lt;/b&gt;<br>
+
+            </b></p>
+        </div><br>
+    </section> 
+    
+        <div class="center">
+        <button><a href="GB Code Editor.html"><b>Try This !</b></a></button>
+        </div><br>
+
+<p>The HTML &lt;strong&gt; element defines text with strong importance. The content inside is typically displayed in bold.</p>
+
+    <section class="main">
+        <div class="main-skills">
+        <div class="card2">
+            <p><b>
+            
+            &lt;strong&gt;This text is important!&lt;/strong&gt;<br>
+
+            </b></p>
+        </div><br>
+    </section> 
+
+        <div class="center">
+        <button><a href="GB Code Editor.html"><b>Try This !</b></a></button>
+        </div><br>
+
+<h3>HTML &lt;i&gt; and &lt;em&gt; Elements</h3><br>
+
+<p>The HTML &lt;i&gt; element defines a part of text in an alternate voice or mood. The content inside is typically displayed in italic.</p><br>
+<p>Tip: The &lt;i&gt; tag is often used to indicate a technical term, a phrase from another language, a thought, a ship name, etc.</p><br>
+
+    <section class="main">
+        <div class="main-skills">
+        <div class="card3">
+            <p><b>
+            
+            &lt;i&gt;This text is italic&lt;/i&gt;<br>
+
+            </b></p>
+        </div><br>
+    </section> 
+
+        <div class="center">
+        <button><a href="GB Code Editor.html"><b>Try This !</b></a></button>
+        </div><br>
+
+<p>The HTML &lt;em&gt; element defines emphasized text. The content inside is typically displayed in italic.</p><br>
+<p>Tip: A screen reader will pronounce the words in &lt;em&gt; with an emphasis, using verbal stress.</p><br>
+
+    <section class="main">
+        <div class="main-skills">
+        <div class="card4">
+            <p><b>
+            
+            &lt;em&gt;This text is emphasized&lt;/em&gt;<br>
+
+            </b></p>
+        </div><br>
+    </section> 
+
+        <div class="center">
+        <button><a href="GB Code Editor.html"><b>Try This !</b></a></button>
+        </div><br>
+
+<h3>HTML &lt;small&gt; Element</h3><br>
+
+<p>The HTML &lt;small&gt; element defines smaller text:</p><br>
+
+    <section class="main">
+        <div class="main-skills">
+        <div class="card5">
+            <p><b>
+            
+            &lt;small&gt;This is some smaller text.&lt;/small&gt;<br>
+
+            </b></p>
+        </div><br>
+    </section> 
+
+        <div class="center">
+        <button><a href="GB Code Editor.html"><b>Try This !</b></a></button>
+        </div><br>
+
+<h3>HTML &lt;mark&gt; Element</h3><br>
+
+<p>The HTML &lt;mark&gt; element defines text that should be marked or highlighted:</p><br>
+
+    <section class="main">
+        <div class="main-skills">
+        <div class="card6">
+            <p><b>
+            
+                &lt;p&gt; Do not forget to buy  &lt;mark&gt;milk &lt/mark&gt; today &lt;/p&gt;<br>
+
+            </b></p>
+        </div><br>
+    </section> 
+
+        <div class="center">
+        <button><a href="GB Code Editor.html"><b>Try This !</b></a></button>
+        </div><br>
+
+<h3>HTML &lt;del&gt; Element</h3><br>
+
+<p>The HTML &lt;del&gt; element defines text that has been deleted from a document. Browsers will usually strike a line through deleted text:</p><br>
+
+    <section class="main">
+        <div class="main-skills">
+        <div class="card7">
+            <p><b>
+            
+                &lt;p&gt; My favorite color is  &lt;del&gt; blue &lt;/del&gt; red. &lt;/p&gt;<br>
+
+            </b></p>
+        </div><br>
+    </section> 
+
+        <div class="center">
+        <button><a href="GB Code Editor.html"><b>Try This !</b></a></button>
+        </div><br>
+
+<h3>HTML &lt;ins&gt; Element</h3><br>
+
+<p>The HTML &lt;ins&gt; element defines a text that has been inserted into a document. Browsers will usually underline inserted text:</p><br>
+
+    <section class="main">
+        <div class="main-skills">
+        <div class="card8">
+            <p><b>
+            
+                &lt;p&gt; My favorite color is  &lt;del&gt; blue &lt;/del&gt; &lt;ins&gt; red &lt;/ins&gt;. &lt;/p&gt;<br>
+
+            </b></p>
+        </div><br>
+    </section> 
+
+        <div class="center">
+        <button><a href="GB Code Editor.html"><b>Try This !</b></a></button>
+        </div><br>
+
+<h3>HTML &lt;sub&gt; Element</h3><br>
+
+<p>The HTML &lt;sub&gt; element defines subscript text. Subscript text appears half a character below the normal line, and is sometimes rendered in a smaller font.<br> Subscript text can be used for chemical formulas, like H2O:</p><br>
+
+    <section class="main">
+        <div class="main-skills">
+        <div class="card9">
+            <p><b>
+            
+                &lt;p&gt; This is  &lt;sub&gt; subscripted &lt;/sub&gt; text. &lt;/p&gt;<br>
+
+            </b></p>
+        </div><br>
+    </section> 
+
+        <div class="center">
+        <button><a href="GB Code Editor.html"><b>Try This !</b></a></button>
+        </div><br>
+
+<h3>HTML &lt;sup&gt; Element</h3><br>
+
+<p>The HTML &lt;sup&gt; element defines superscript text. Superscript text appears half a character above the normal line,<br> and is sometimes rendered in a smaller font. Superscript text can be used for footnotes, like WWW<sup>[1]</sup>:</p><br>
+
+    <section class="main">
+        <div class="main-skills">
+        <div class="card10">
+            <p><b>
+            
+                &lt;p&gt; This is  &lt;sup&gt; superscripted &lt;/sup&gt; text. &lt;/p&gt;<br>
+
+            </b></p>
+        </div><br>
+    </section> 
+
+        <div class="center">
+        <button><a href="GB Code Editor.html"><b>Try This !</b></a></button>
+        </div><br><br><br><br><br><br>
+
+
+        
+    <div class="center">
+      <button><a href="HTML Text Formatting.html"><b>HTML Comments</b></a></button>
+      </div><br>
+
+
+    </section>
+  </div>
+</div>
+</body>
+</html>
