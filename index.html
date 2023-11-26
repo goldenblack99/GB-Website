@@ -113,7 +113,42 @@ audio{
   color: white;
 }
 
+.btn{
+	text-align: center;
+    position: fixed;
+	bottom: 2.1rem;
+    right: 2.1rem;
+    display: inline-block;
+    padding: 14px 60px;
+    background: #737373;
+    border-radius: 40px;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    box-shadow: 0 0 5px #ff1100,
+                0 0 25px #ff1100;
+}
+.btn:hover{
+    background: #737373;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 0 20px #0011ff;
+}
 
+@keyframes slideTop {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
 </style>
   
 </head>
@@ -143,11 +178,15 @@ audio{
         <div class="card">
           <h2>CSS</h2>
           <p>Cascading Style Sheets</p>
-          <button><a href="Euro-soya.html"><b><font color="#c4c4c4">Euro-Soya(Costa)</font></b></a></button>
-          <button><a href="index.html"><b><font color="#c4c4c4">Get Started</font></b></a></button>
+          <button><a href="#"><b><font color="#c4c4c4">Tutorial Video</font></b></a></button>
+          <button><a href="#"><b><font color="#c4c4c4">Get Started</font></b></a></button>
     </section>
 		</div>
 	  </div>
+
+    <a href="Beta.html" class="btn">Beta Version(V3)</a>
+
+
 
 </body>
 </html>
