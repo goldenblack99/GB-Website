@@ -1,0 +1,439 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    color: rgb(255, 255, 255);
+    background: rgb(8, 27, 41);
+}
+
+.header {
+    position: fixed;
+    height: 60px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: rgb(5, 17, 41);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    position: relative;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 500;
+    cursor: default;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+
+.navbar a {
+    display: inline-block;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+
+.navbar a:hover {
+    color: rgb(0, 255, 255);
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .3s;
+}
+
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: .3s;
+}
+
+.home-content p {
+    font-size: 20px;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: .2s;
+}
+
+.home-sci a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid rgb(0, 255, 255);
+    border-radius: 50%;
+    font-size: 20px;
+    color: rgb(0, 255, 255);
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+    transition: .5s ease;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+
+.home-sci a:hover {
+    background: rgb(0, 255, 255);
+    color: rgb(0, 0, 0);
+    box-shadow: 0 0 20px rgb(0, 255, 255);
+}
+
+.home .about-img img{
+    width: 500px;
+
+}
+
+.about{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+    padding-top: 10rem;
+}
+.about-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-img img{
+    width: 300px;
+    margin: auto;
+    border-radius: 50%;
+    border:transparent;
+    animation: slideRight 500ms, glow 2s infinite ;
+    box-shadow: 0 0 80px rgb(151, 53, 151),
+                0 0 160px rgb(0, 255, 255);
+
+}
+.about-text h2{
+    font-size: 60px;
+}   
+.about-text h2 span{
+    color: rgb(0, 255, 255);
+}
+.about-text p{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+}
+
+#services{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    line-height: 1.4;
+    margin: 4rem 0 4rem 0;
+}
+.sub-title{
+    text-align: center;
+    font-size: 65px;
+    padding-bottom: 70px;
+}
+.sub-title span{
+    color: rgb(0, 255, 255);
+}
+.container{
+    padding: 90px;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(259px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.services-list div{
+    background-color: transparent;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 13px;
+    border-right: 10px;
+    border-radius: 20px;
+    transition: background 0.5s, transform 0.5s;
+    box-shadow: 1px 1px 20px rgb(0, 0, 255),
+                1px 1px 40px rgb(37, 37, 255);
+}
+.services-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.services-list div a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.read{
+    display: inline-block;
+    padding: 12px 28px;
+    background: rgb(0, 255, 255);
+    border-radius: 40px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 3s;
+    box-shadow: 0 0 5px rgb(0, 255, 255),
+                0 0 25px rgb(0, 255, 255);
+}
+.read:hover{
+    background: rgb(26, 245, 245);
+    color: rgb(0, 0, 0);
+    box-shadow: 0 0 20px rgb(12, 221, 221);
+}
+.services-list div:hover{
+    transform: translateY(-10px);
+}
+.shake{
+    display: inline-block;
+    padding: 12px 28px;
+    background: rgb(0, 255, 255);
+    border-radius: 40px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 100;
+    animation: shake 2s ease infinite;
+    animation-delay: 0;
+    box-shadow: 0 0 5px rgb(0, 255, 255),
+                0 0 25px rgb(0, 255, 255);
+}
+.shake:hover{
+    background: rgb(26, 245, 245);
+    color: rgb(0, 0, 0);
+    box-shadow: 0 0 20px rgb(12, 221, 221);
+}
+
+.contact{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 3rem;
+    padding-left: 30px;
+    margin-top: 130px;
+}
+.contact-text h2{
+    font-size: 80px;
+    line-height: 1;
+    text-align: center;
+}
+.contact-text h2 span{
+    color: rgb(0, 255, 255);
+}
+.contact-text h4{
+    margin: 15px 0;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 600;
+}
+.contact-list{
+    margin-bottom: 3rem;
+}
+.contact-list li{
+    margin-bottom: 10px;
+    display: block;
+}
+.contact-list i{
+    display: inline-block;
+    color: rgb(0, 255, 255);
+    font-size: 20px;
+    font-weight: 600;
+    transform: all .40s ease;
+}
+.contact-list li a:hover{
+    transform: scale(1.01) translateY(-5px);
+    color: rgb(0, 255, 255);
+}
+.contact-form form{
+    position: relative;
+}
+.contact-form form input,form textarea{
+    border: none;
+    outline: none;
+    width: 90%;
+    padding: 18px;
+    background: rgb(199, 199, 199);
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+}
+.contact-form textarea{
+    resize: none;
+    height: 220px;
+}   
+.contact-form form .send{
+    display: inline-block;
+    padding: 14px 60px;
+    background: rgb(0, 255, 255);
+    border-radius: 40px;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 3s;
+    box-shadow: 0 0 5px rgb(0, 255, 255),
+                0 0 25px rgb(0, 255, 255);
+}
+
+.contact-form form .send:hover{
+    background: rgb(26, 245, 245);
+    color: rgb(0, 0, 0);
+    box-shadow: 0 0 20px rgb(12, 221, 221);
+}
+
+.top{
+    position: fixed;
+    bottom: 2.1rem;
+    right: 2.1rem;
+}
+.top i{
+    color: rgb(0, 0, 0);
+    background: rgb(0, 255, 255);
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideBottom {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes shake {
+	0%, 100% {transform: translateX(0);}
+	10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
+	20%, 40%, 60%, 80% {transform: translateX(10px);}
+}
+@keyframes glow{
+    0%,100% {box-shadow:0 0 80px 0 rgb(151, 53, 151),
+                        0 0 160px 0 rgb(0, 255, 255);}
+    50% {box-shadow:0 0 80px 10px rgb(151, 53, 151),
+                    0 0 160px 30px rgb(0, 255, 255);}
+}
