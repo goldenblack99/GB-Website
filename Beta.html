@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> GB_Website </title>
+    <link rel="stylesheet" type="text/css" href="Beta.css">
+    <script type="text/javascript" src="Beta.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+        <header class="header">
+
+            <button onclick="hamburger();" onfocusout="hamburger();">
+                <svg id="hamburger"class="hamburger" viewBox="0 0 100 80" width="40" height="40">
+                    <rect class="line top" x="15" y="15" width="70" height="10" rx="5"></rect>
+                    <rect class="line mid" x="15" y="35" width="70" height="10" rx="5"></rect>
+                    <rect class="line bot" x="15" y="55" width="70" height="10" rx="5"></rect>
+                </svg>
+            </button>
+
+            <a href="Beta.html" class="logo">GB_Website</a>
+
+        </header>
+
+        <nav id="navigation" class="navigation">
+            <ul class="nav-list">
+                <a href="#"><li>Home</li></a>
+                <a href="#about"><li>About</li></a>
+                <a href="#services"><li>Services</li></a>
+                <a href="#contact"><li>Contact</li></a>
+            </ul>
+        </nav>
+
+        <section class="home">
+            <div class="home-content">
+                <h3>Hello, This is</h3>
+                <h1>GB_Website</h1>
+                <p>With This Website You Can Easily Learn To Code And Create Your Own Website</p>
+
+                <div class="home-sci">
+                    <a href="https://discordapp.com/users/782622846471503893" target="_blank" style="--i:5"><i class='bx bxl-discord-alt' ></i></a>
+                    <a href="https://whatsapp.com/channel/0029Va9GJDgISTkKe7jVcL47" target="_blank" style="--i:6"><i class='bx bxl-whatsapp' ></i></a>
+                </div>
+            </div>
+            <div class="about-img">
+                <img src="GB_logo-round.png">
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="about-img">
+                <img src="GB_logo-round.png">
+            </div>
+            <div class="about-text">
+                <h2>About <span>GB_Website</span></h2>
+                <p>The goal of the educational website development process is to create user-friendly, accessible and attractive platforms that meet the needs of learners, educators and institutions. This site is an open learning platform (OpenLearning is an online learning platform that goes beyond content delivery to focus on community, engagement and learning engagement.)</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="services" id="services">
+                <div class="container">
+                    <h1 class="sub-title">GB_Website <span>Services</span></h1>
+                    <div class="services-list">
+                        <div>    
+                            <i class='bx bxl-html5' style='color:#00ffff'  ></i>
+                            <h2>HTML</h2>
+                            <p>HTML stands for Hyper Text Markup Language. HTML is the standard markup language for creating Web pages. HTML describes the structure of a Web page. HTML consists of a series of elements. HTML elements tell the browser how to display the content.</p>
+                                <a href="#" class="read">Turorial Video</a>
+                                <a href="Html.html" class="read">Get Start</a> 
+                        </div>
+                        <div>    
+                            <i class='bx bxl-css3' style='color:#00ffff'  ></i>
+                            <h2>CSS</h2>
+                            <p>Cascading Style Sheets (CSS) is a simple mechanism for adding style (e.g., fonts, colors, spacing) to Web documents. These pages contain information on how to learn and use CSS and on available software.</p>
+                                <a href="#" class="shake">Coming Soon !</a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="contact-text">
+                <h2>Contact <span>Us</span></h2>
+                <h4>Let's Work Together</h4>
+                <div class="contact-list">
+                    <li><i class='bx bxs-send'></i>shonalnethsara1@gmail.com</li>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <div>
+                    <form action="https://formspree.io/f/xwkddlvy" method="post">
+                        <input type="text" name="name" placeholder="Enter Your Name" autocomplete="off" required>
+                        <input type="email" name="email" placeholder="Enter Your Email" autocomplete="off" required>
+                        <input type="text" placeholder="Enter Your Subject">
+                        <textarea name="message" cols="40" rows="10" placeholder="Enter Your Message" required></textarea>
+                        <input type="submit" value="submit" class="send">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <a href="#" class="top"><i class='bx bxs-up-arrow'></i></a>
+    </body>
+</html>
