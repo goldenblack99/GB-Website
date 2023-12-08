@@ -627,10 +627,10 @@ a{
 
 
 
-/*  @media screen and (max-width: 400px)  */
+/*  @media screen and (max-width: 600px)  */
 
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 600px){
 
     * {
         margin: 0;
@@ -640,7 +640,7 @@ a{
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
 
-    /*---------Header (max-width: 400px)---------*/
+    /*---------Header (max-width: 600px)---------*/
 
     .header{    
         height: 60px;
@@ -651,7 +651,7 @@ a{
         padding: 0px;
     }
 
-     /*---------Navigation (max-width: 400px)---------*/
+     /*---------Navigation (max-width: 600px)---------*/
 
     .logo {
         font-size: 20px;
@@ -672,7 +672,7 @@ a{
         width: 95px;
     }
 
-    /*---------Home (max-width: 400px)---------*/
+    /*---------Home (max-width: 600px)---------*/
 
     .home {
         height: 40vh;
@@ -700,7 +700,7 @@ a{
         animation: slideLeft 2s;
     }
 
-    /*---------About (max-width: 400px)---------*/
+    /*---------About (max-width: 600px)---------*/
 
     .about{
         padding-top: 5rem;
@@ -727,7 +727,7 @@ a{
         font-weight: lighter;
     }
 
-    /*---------#services (max-width: 400px)---------*/
+    /*---------#services (max-width: 600px)---------*/
 
 
     .sub-title{
@@ -754,7 +754,7 @@ a{
         font-size: 10px;
     }
 
-    /*---------Contact (max-width: 400px)---------*/
+    /*---------Contact (max-width: 600px)---------*/
 
     .contact{
         display: block;
@@ -783,7 +783,7 @@ a{
         font-weight: 600;
     }
 
-    /*---------Top_Btn (max-width: 400px)---------*/
+    /*---------Top_Btn (max-width: 600px)---------*/
     
     .top i{
         background: rgb(0, 0, 255);
