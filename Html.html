@@ -6,18 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> GB_Website </title>
     <link rel="stylesheet" type="text/css" href="Beta.css">
+    <script type="text/javascript" src="Beta.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
+
     <header class="header">
+
+        <button onclick="hamburger();" onfocusout="hamburger();">
+            <svg id="hamburger"class="hamburger" viewBox="0 0 100 80" width="40" height="40">
+                <rect class="line top" x="15" y="15" width="70" height="10" rx="5"></rect>
+                <rect class="line mid" x="15" y="35" width="70" height="10" rx="5"></rect>
+                <rect class="line bot" x="15" y="55" width="70" height="10" rx="5"></rect>
+            </svg>
+        </button>
+
         <a href="Beta.html" class="logo">GB_Website</a>
 
-        <nav class="navbar">
-            <a href="#" style="--i:1"class="active">HTML</a>
-            <a href="#intro" style="--i:2">Introduction</a>
-            <a href="#basic" style="--i:3">Basic Examples</a>
-        </nav>
     </header>
+
+    <nav id="navigation" class="navigation">
+        <ul class="nav-list">
+            <a href="#"><li>Home</li></a>
+            <a href="#intro"><li>Introduction</li></a>
+            <a href="#basic"><li>Basic Examples</li></a>
+        </ul>
+    </nav>
 
     <section class="about" id="about">
         <div class="about-img">
