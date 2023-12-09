@@ -733,6 +733,7 @@ a{
     .sub-title{
         font-size: 25px;
         padding-bottom: 5px;
+	padding-top: 30px;
     }
     .container{
         padding: 50px;
