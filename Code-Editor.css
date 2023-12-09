@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Poppins&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*--------- Header  ---------*/
+
+
+a{
+    text-decoration: none;
+    color: rgb(0, 255, 255);
+}
+.header {
+    margin-bottom: 40px;
+    position: sticky;
+    top: 0;
+    background-color: rgb(4, 12, 31);
+    background-size: 200% 200%;
+    box-shadow: 0 0 20px 5px rgb(0, 0, 255);
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+}
+.logo {
+    margin: auto;
+	font-size: 32px;
+	user-select: none;
+    color: rgb(133, 133, 133);
+    text-decoration: none;
+    font-weight: 500;
+    cursor: default;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+}
+
+/*--------- Code Editor ---------*/
+
+
+.code-editor-body{
+    background: rgb(2, 6, 15);
+    color: rgb(0, 255, 255);
+}
+.code-editor-container{
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+}
+.code-editor-container .left, .code-editor-container .right{
+    flex-basis: 50%;
+    padding: 10px;
+}
+.code-editor-container .left textarea{
+    width: 100%;
+    height: 80%;
+    background: #242424;
+    color: #ffffff;
+    padding: 10px 20px;
+    outline: 0;
+    border: 0;
+    font-size: 13px;
+    box-shadow: 1px 1px 15px rgb(0, 0, 255);
+}
+  
+.code-editor-container .left .textarea-first-child, .fa-html5{
+    color: rgb(0, 255, 0);
+}
+
+#codeEditorOutput{
+    width: 100%;
+    height: 80%;
+    background: rgb(161, 161, 161);
+    border: 0;
+    outline: 0;
+    box-shadow: 1px 1px 15px rgb(0, 0, 255);
+}
+.code-editor-container div label{
+    display: flex;
+    background: rgb(0, 0, 0);
+    align-items: center;
+    height: 30px;
+}
+.code-editor-container div label i{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@keyframes slideBottom {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+  
+
+
+
+
+
+
+
+
+  
+@media  (max-width:1111px) { 
+    .left-container{
+        width: 100%;
+        position: absolute;
+        top: 0;
+        z-index: 1000;
+        display: none; 
+        left: 0;
+        
+        height: 100vh; 
+    }
+    .leftcontainerdisplaydata{ 
+        width: 100%;
+    }
+    .fa-bar-welcomebar,.fa-xmark{
+        display: block;
+        margin: 0 5px;
+        width: unset;
+        height: unset;
+        overflow:visible;
+    }
+    .fa-xmark{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+}
+@media  (max-width:945px){
+    .right-container{
+        flex-basis: 25%;
+        overflow: hidden;
+    }
+    .right-container .profile-bar .prf {
+        padding: 0px 0;
+    }
+    .right-container .profile-bar .prf h3{
+        font-size: 13px;
+    }
+    .right-container .profile-bar .prf p{
+        font-size: 13px;
+    }
+    .right-container .profile-bar .prf .followers div h2{
+        font-size: 14px;
+    }
+} 
+@media  (max-width:890px){
+    .index-container{
+        display: flex;
+        /* flex-direction: column-reverse; */
+        width: 100%;
+        padding: 30px; 
+        justify-content: space-between;
+    } 
+    .middle-container{
+        flex-basis: 70%;
+        overflow: hidden;
+    }
+}
+@media  (max-width:800px){
+    .index-container{
+        display: flex;
+        flex-direction: column-reverse;
+        margin: -90px 0 0 0;
+        padding: 0;
+    }
+    .post-content{
+        font-size: 12px;
+    }
+    .right-container {
+        position: relative;
+        padding: 20px;
+    }
+    .right-container .bar{
+        display: flex;
+        align-items: center;
+    }
+ 
+    .right-container .bar:last-child{
+        margin-bottom: 30px;
+    }
+    .right-container .bar img{
+        width: 25px;
+    }
+    .right-container .bar a{
+       padding-bottom: 13px;
+    }
+    .fa-chevron-down-style{
+        display: block;
+    }
+    .right-container .bar{
+        display: none;
+    }
+    .text-developer-tools{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        border-bottom: 1px solid var(--text-color);
+        padding-bottom: 8px;
+    }
+    .right-container .profile-bar,.follow-bar{
+        margin: 10px 0;
+    }
+    .middle-container{
+        margin-top: 100px;
+        position: relative;
+    }
+    .vid p{
+        font-size: 8px;
+    }
+    .h1vid h1{
+        font-size: 23px;
+        margin-bottom: 50px;
+    }
+    .recomended-wrap .recomennded-profile .rp-banner{
+        width: 100%;
+        border-radius: 10px;
+        margin-top: -1px;
+    }
+    .recomended-wrap .recomennded-profile .rp-data{
+        width: 100%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px 0px;
+    }
+    .recomended-wrap .recomennded-profile .rp-data img{
+        width: 50px;
+        height: 50px;
+        border: 4px solid #1876f2;
+        margin-top: -35px;
+        background-color: #fff;
+        border-radius: 50%;
+    }
+    .recomended-wrap .recomennded-profile .rp-data h4{
+        font-size: 12px;
+    }
+    .recomended-wrap .recomennded-profile .rp-data p{
+        font-size: 10px;
+    }
+    .recomended-wrap .recomennded-profile .rp-data a{
+        background: var(--bg-divcolur);
+        color: var(--text-color);
+        text-decoration: double;
+        font-size: 10px;
+        font-weight: 600;
+    }
+    .create-post .links a{
+        display: flex; 
+        align-items: center;
+        text-decoration: none;
+        font-size: 10px; 
+        padding: 0 3px;
+        background:transparent;
+        color: var(--text-color);
+    }
+    .create-post .links img{
+        font-size: 10px;
+    }
+
+    nav .nav-left .nav-logo-style img{
+        width: 23px;
+    }
+    nav .nav-left .nav-logo-style h3{
+        font-size: 13px;
+    }
+    nav .nav-left a{
+        color: #fff;
+        font-size: 10px;
+        text-decoration: none;
+        margin: 0 10px;
+    } 
+    .nav-right-img{
+        width: 10px;
+    }
+    .profile-bar div p{
+        font-size: 10px;
+    }
+    #searchBar{
+    width: 100px;
+    }
+}
