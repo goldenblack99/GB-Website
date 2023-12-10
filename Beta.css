@@ -413,6 +413,18 @@ a{
     line-height: 1.4;
     margin-bottom: 4rem;
 }
+#basic{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+}
+#elements{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+}
 .main-list{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(259px,1fr));
