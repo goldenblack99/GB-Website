@@ -1,203 +1,44 @@
-<!DOCTYPE html>
-
+<html>
 <head>
-
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
-  
-<style>
-
-*{
-  margin: 0;
-  padding: 0;
-  outline: none;
-  border: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  font-family: "Calibri", sans-serif;
-}
-body  {
-  background-color: rgb(2, 6, 15);
-  background-position:center;
-  background-attachment:fixed;
-}
-
-.main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    border-radius: 15px;
-}
-h1{
-  position: relative;
-  display: contents;
-  color: rgb(255, 255, 255);
-  font-size: 5rem;
-  font-weight: 100;
-}
-
-span{
-    user-select: none;
-    padding-bottom: 0;
-    animation: anim 2.8s ease-out infinite;
-    animation-delay: anim 2.8s ease-out infinite;
-    animation-delay: var(--d);
-}
-
-.container{
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.gear{
-    width: 200px;
-    height: 200px;
-    background:  rgb(153, 153, 153);
-    border-radius: 50%;
-    animation: spin 2s linear infinite;
-    animation-delay: 0.3s;
-    position: relative;
-}
-.gear-inner{
-    width: 140px;
-    height: 140px;
-    background: black;
-    border-radius: 50%;
-    position: absolute;
-    top: 30px;
-    left: 30px;
-}
-
-.teeth{
-    width: 240px;
-    height: 40px;
-    background:  rgb(153, 153, 153);
-    position: relative;
-}
-
-.gear:nth-child(2){
-    animation: spinback 2s linear infinite;
-}
-
-.teeth:nth-child(1){
-    top: 84px;
-    left: -20px;
-}
-
-.teeth:nth-child(2){
-    top: 40px;
-    left: -20px;
-    transform: rotateZ(90deg);
-}
-
-.teeth:nth-child(3){
-    top: 0px;
-    left: -20px;
-    transform: rotateZ(45deg);
-}
-
-.teeth:nth-child(4){
-    top: -40px;
-    left: -20px;
-    transform: rotateZ(135deg);
-}
-
-.container{
-    gap: 25px;
-}
-
-@keyframes anim {
-    0%,
-    90% {
-        color: rgb(153, 153, 153);
-        text-shadow: 1px 1px 2px rgb(255, 255, 255);
-    }
-
-    100% {
-        color: rgb(0, 255, 255);
-        text-shadow: 1px 1px 35px rgb(0, 0, 255);
-    }
-}
-
-
-@keyframes spin {
-    0%{
-        transform: rotateZ(0deg);
-    }
-    100%{
-        transform: rotateZ(360deg);
-    }
-}
-@keyframes spinback {
-    0%{
-        transform: rotateZ(0deg);
-    }
-    100%{
-        transform: rotateZ(-360deg);
-    }
-}
-
-
-</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>GB-Website (V3)</title>
 </head>
-<body>
 
-    <div class="main">
-        <h1>
-            <span style="--d: 0s">G</span>
-            <span style="--d: 0s">B</span>
-            <span style="--d: 0.2s">W</span>
-            <span style="--d: 0.2s">E</span>
-            <span style="--d: 0.2s">B</span>
-            <span style="--d: 0.2s">S</span>
-            <span style="--d: 0.2s">I</span>
-            <span style="--d: 0.2s">T</span>
-            <span style="--d: 0.2s">E</span>
-        </h1>
-        </div>
-        <div class="main">
-        <h1>
-            <span style="--d: 0.4s">U</span>
-            <span style="--d: 0.6s">p</span>
-            <span style="--d: 0.8s">d</span>
-            <span style="--d: 1s">a</span>
-            <span style="--d: 1.2s">t</span>
-            <span style="--d: 1.4s">i</span>
-            <span style="--d: 1.6s">n</span>
-            <span style="--d: 1.8s">g</span>
-            <span style="--d: 2s">.</span>
-            <span style="--d: 2.2s">.</span>
-            <span style="--d: 2.4s">.</span>
-        </h1>
+<body>
+        
+    <div class="circle">
+        <p class="count">
+            <span class="percent">0</span>%
+        </p>
+    </div>
+    <div>
+        <a href="Beta.html" class="btn">-START-</a>
     </div>
 
- 
+    
+<script>
 
-  <div class="container">
-      <div class="gear">
-          <div class="teeth"></div>
-          <div class="teeth"></div>
-          <div class="teeth"></div>
-          <div class="teeth"></div>
-          <div class="gear-inner"></div>
-      </div>
-      <div class="gear">
-          <div class="teeth"></div>
-          <div class="teeth"></div>
-          <div class="teeth"></div>
-          <div class="teeth"></div>
-          <div class="gear-inner"></div>
-      </div>
-  
-  </div>
+const $percent = document.querySelector('.percent');
+const $circle = document.querySelector('.circle')
+let load = 0;
 
-  </body>
+function update() {
+    load += load < 100;
+    $percent.innerHTML = load;
+    $circle.style.background =
+        `conic-gradient(from 0deg at 50% 50%, #6f7bf7 0%, #9bf8f4 ${load}%, #101012 ${load}%)`;  
+}
+
+setInterval(update, 150);
+
+
+
+</script>
+
+
+
+
+</body>
 </html>
