@@ -238,7 +238,7 @@ a{
 }
 .services-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(259px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
@@ -249,7 +249,7 @@ a{
     font-weight: 13px;
     border-right: 10px;
     border-radius: 20px;
-    transition: background 0.5s, transform 0.5s;
+    transition: background 0.5s, transform .5s;
     box-shadow: 1px 1px 20px rgb(0, 0, 255),
                 1px 1px 40px rgb(37, 37, 255);
 }
@@ -281,7 +281,7 @@ a{
     font-weight: 600;
     opacity: 0;
     animation: slideTop 1s ease forwards;
-    animation-delay: 1s;
+    animation-delay: 1ms;
     box-shadow: 0 0 5px rgb(0, 255, 255),
                 0 0 25px rgb(0, 255, 255);
 }
@@ -421,9 +421,15 @@ a{
     line-height: 1.4;
     margin-bottom: 4rem;
 }
+#attributes{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+}
 .main-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(259px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
@@ -579,12 +585,14 @@ h1{
 	10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
 	20%, 40%, 60%, 80% {transform: translateX(10px);}
 }
+
 @keyframes glow {
     0%,100% {box-shadow:0 0 80px 0 rgb(0, 254, 255),
                         0 0 160px 0 rgb(0, 0, 255);}
     50% {box-shadow:0 0 80px 20px rgb(0, 255, 255),
                     0 0 160px 10px rgb(0, 0, 255);}
 }
+
 @keyframes rotate {
     0%{
         transform: rotate(0deg);
@@ -593,6 +601,7 @@ h1{
         transform: rotate(360deg);
     }
 }
+
 @keyframes mymove {
     50% {box-shadow: 10px 20px 30px blue;}
   }
@@ -635,7 +644,7 @@ h1{
 
     .logo {
         font-size: 20px;
-        font-weight: 300;
+        font-weight: 600;
     }
     .navigation{
         font-weight: 300;
@@ -676,7 +685,7 @@ h1{
         font-size: 15px;
     }
     .home .about-img img{
-        width: 100px;
+        width: 150px;
         animation: slideLeft 2s;
     }
 
@@ -691,7 +700,7 @@ h1{
         justify-content: center;
     }
     .about-img img{
-        width: 100px;
+        width: 125px;
         margin: auto;
         border-radius: 50%;
         border:transparent;
@@ -783,7 +792,7 @@ h1{
 
 /*  @media screen and (max-width: 992px)- Tablet  */
 
-@media screen and (max-width: 300px){
+@media screen and (max-width: 992px){
 
     * {
         margin: 0;
@@ -796,7 +805,7 @@ h1{
     /*---------Header (max-width: 992px)---------*/
 
     .header{    
-        height: 60px;
+        height: 90px;
         width: 100%;
         padding: 20px 2%;
     }
@@ -807,49 +816,49 @@ h1{
      /*---------Navigation (max-width: 992px)---------*/
 
     .logo {
-        font-size: 20px;
-        font-weight: 300;
+        font-size: 35px;
+        font-weight: 900;
     }
     .navigation{
         font-weight: 300;
-        width: 100px;
+        width: 250px;
     }
     .navigation-open{
         left: 0;
     }
     
     .navigation .nav-list{
-        line-height: 50px;
+        line-height: 100px;
     }
     .nav-list li{
-        width: 95px;
+        width: 245px;
     }
 
     /*---------Home (max-width: 992px)---------*/
 
     .home {
-        height: 40vh;
+        height: 50vh;
     }
     .home-content h3 {
-        font-size: 20px;
-        font-weight: 300;
+        font-size: 40px;
+        font-weight: 200;
     }
     .home-content h1 {
-        font-size: 25px;
-        font-weight: 600;
+        font-size: 50px;
+        font-weight: 900;
     }
     .home-content p {
-        line-height: 1.5;
-        font-weight: lighter;
-        font-size: 10px;
+        line-height: 1.2;
+        font-weight: 100;
+        font-size: 30px;
     }
     .home-sci a {
-        width: 30px;
-        height: 30px;
-        font-size: 15px;
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
     }
     .home .about-img img{
-        width: 100px;
+        width: 300px;
         animation: slideLeft 2s;
     }
 
@@ -864,7 +873,7 @@ h1{
         justify-content: center;
     }
     .about-img img{
-        width: 100px;
+        width: 250px;
         margin: auto;
         border-radius: 50%;
         border:transparent;
@@ -872,10 +881,10 @@ h1{
     }
     
     .about-text h2{
-        font-size: 30px;
+        font-size: 50px;
     }
     .about-text p{
-        font-size: 10px;
+        font-size: 30px;
         line-height: 1.4;
         font-weight: lighter;
     }
@@ -884,27 +893,27 @@ h1{
 
 
     .sub-title{
-        font-size: 25px;
+        font-size: 50px;
         padding-bottom: 5px;
     }
     .container{
         padding: 50px;
     }
     .services-list{
-        grid-gap: 20px;
+        grid-gap: 25px;
         margin-top: 50px;
     }
     .services-list div i{
-        font-size: 20px;
+        font-size: 40px;
         margin-bottom: 5px;
     }
     .services-list div h2{
-        font-size: 25px;
-        font-weight: 300;
+        font-size: 50px;
+        font-weight: 400;
         margin-bottom: 15px;
     }
     .read{
-        font-size: 10px;
+        font-size: 30px;
     }
 
     /*---------Contact (max-width: 992px)---------*/
@@ -913,33 +922,33 @@ h1{
         display: block;
     }
     .contact-text h2{
-        font-size: 25px;
+        font-size: 50px;
     }
     .contact-text h4{
-        font-size: 10px;
-        font-weight: 300;
+        font-size: 40px;
+        font-weight: 400;
     }
     .contact-list i{
         display: grid;
-        font-size: 5px;
+        font-size: 30px;
     }
     .contact-form form{
         display: block;
     }
     .contact-form textarea{
         resize: none;
-        height: 220px;
+        height: 250px;
     }   
     .contact-form form .send{
         display: block;
-        font-size: 20px;
-        font-weight: 600;
+        font-size: 30px;
+        font-weight: 900;
     }
 
     /*---------Top_Btn (max-width: 992px)---------*/
     
     .top i{
         background: rgb(0, 0, 255);
-        font-size: 10px;
+        font-size: 30px;
     }
 }
