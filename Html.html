@@ -31,6 +31,7 @@
             <a href="#intro"><li>Introduction</li></a>
             <a href="#basic"><li>Basic</li></a>
             <a href="#elements"><li>Elements</li></a>
+            <a href="#attributes"><li>Attributes</li></a>
         </ul>
     </nav>
 
@@ -287,26 +288,152 @@
                         <li>It has a start tag &lt;h1&gt; and an end tag &lt;/h1&gt;:</li><br>
                     <p><span1>&lt;p&gt;My first paragraph.&lt;/p&gt;</span1></p><br>
                         <li>The &lt;p&gt; element defines a paragraph.</li>
-                        <li>It has a start tag &lt;p&gt; and an end tag &lt;/p&gt;:</li>
+                        <li>It has a start tag &lt;p&gt; and an end tag &lt;/p&gt;:</li><br><br>
+                    <p>
+                        <mark> However, never rely on this! Unexpected results and errors may occur if you forget the end tag! </mark>
+                    </p>
                 </div>
                 <div>
                     <h2>Never Skip the End Tag</h2>
-                    <li>Some HTML elements will display correctly, even if you forget the end tag:</li><br>
+                        <li>Some HTML elements will display correctly, even if you forget the end tag:</li><br>
                     <p><span1>
-                        &lt;!Doctype html&gt;<br>
                         &lt;html&gt;<br>
-                        &lt;head&gt;<br>
-                        &lt;title&gt; Page Title &lt;/title&gt;<br>
-                        &lt;/head&gt;<br>
                         &lt;body&gt;<br><br>
-                        &lt;p&gt; My First paragraph. &lt;/p&gt;<br><br>
+                        &lt;h1&gt; My First heading. <br>
+                        &lt;p&gt; My First paragraph. <br><br>
                         &lt;/body&gt;<br>
                         &lt;/html&gt;<br>
                     </span1></p>
+                    <a href="Code-Editor.html" target="_blank" class="btn">Try Now !</a>
+                </div>
+                <div>
+                    <h2>Empty HTML Elements</h2>
+                        <li>HTML elements with no content are called empty elements.</li>
+                        <li>The &lt;br&gt; tag defines a line break, and is an empty element without a closing tag:</li><br>
+                    <p><span1>
+                        &lt;p&gt;This is a &lt;br&gt; paragraph with a line break.&lt;/p&gt;<br>
+                    </span1></p>
+                    <a href="Code-Editor.html" target="_blank" class="btn">Try Now !</a>
+                </div>
+                <div>
+                    <h2>HTML is Not Case Sensitive</h2>
+                        <li>HTML tags are not case sensitive: &lt;p&gt; means the same as &lt;p&gt;.</li>
+                        <li>The HTML standard does not require lowercase tags,but GBWEB recommends lowercase in HTML, and demands lowercase for stricter document types like XHTML.</li><br><br>
+                    <p>
+                        <mark>At GB-Website we always use lowercase tag names.</mark>
+                    </p>
                 </div>
             </div>    
         </div>
     </section>
+
+    <section class="main" id="attributes">
+        <div class="container">
+            <h1 class="sub-title">HTML <span>Attributes</span></h1>
+            <li>HTML attributes provide additional information about HTML elements.</li>
+            <div class="main-list">
+                <div>
+                    <h2>HTML Attributes</h2>
+                        <li>All HTML elements can have attributes</li>
+                        <li>Attributes provide additional information about element</li>
+                        <li>Attributes are always specified in the start tag</li>
+                        <li>Attributes usuarly come in name/value pairs like: name="value" </li><br>
+                    <h2>The href Attribute</h2>
+                    <p>The  &lt;a&gt; tag defines a hyperlink. The href attribute specifies the URL of the page the link goes to:</p><br>
+                    <h2>HTML Example</h2>
+                    <p><span1>
+                        &lt;a href="https://coding.libertatia.edu.lk"&gt; This is a link &lt;/a&gt;<br>
+                    </span1></p>
+                    <a href="Code-Editor.html" target="_blank" class="btn">Try Now !</a>
+                </div>
+                <div>
+                    <h2>The src Attribute</h2>
+                        <li>The &lt;img&gt; tag is used to embed an image in an HTML page. The src attribute specifies the path to the image to be displayed:</li><br>
+                    <p><span1>
+                        &lt;img src="GB_logo-round.png"&gt;<br>
+                    </span1></p>
+                    <a href="Code-Editor.html" target="_blank" class="btn">Try Now !</a><br><br>
+                    <p>1. There are two ways to specify the URL in the src attribute:</p>
+                        <li>Absolute URL - Links to an external image that is hosted on another website.<br> Example: src="https://coding.libertatia.edu.lk/images/GB_logo-round.png"</li>
+                </div>
+                <div>
+                    <p><span>Note:</span><mark> External images might be under copyright. If you do not get permission to use it, you may be in violation of copyright laws.In addition,
+                        you cannot control external images; it can suddenly be removed or changed.</mark></p><br>
+                    <p>2. Relative URL - Links to an image that is hosted within the website. Here, the URL does not include the domain name.</p>
+                        <li>If the URL begins without a slash, it will be relative to the current page. Example: img src="GB_logo-round.png".</li>
+                        <li>If the URL begins with a slash, it will be relative to the domain. Example: src="/images/GB_logo-round.png".</li><br>
+                    <p>
+                        <mark>Tip: It is almost always best to use relative URLs. They will not break if you change domain.</mark>
+                    </p>
+                </div>
+                <div>
+                    <h2>The Width And Height Attributes</h2>
+                        <li>The &lt;img&gt; tag should also contain the width and height attributes, which specify the width and height of the image (in pixels):</li><br>
+                    <p><span1>
+                        &lt;img src="GBWebsite.jpg" width="900" height="600"&gt;<br>
+                    </span1></p>
+                    <a href="Code-Editor.html" target="_blank" class="btn">Try Now !</a><br><br>
+                </div>
+                <div>
+                    <h2>The alt Attribute</h2>
+                        <li>The required alt attribute for the &lt;img&gt; tag specifies an alternate text for an image, if the image for some reason cannot be displayed. This can be due to a slow connection, or an error in the src attribute, or if the user uses a screen reader.</li><br>
+                    <p><span1>
+                        &lt;img src="GBWebsite.jpg" alt="GBPro Web Image"&gt;<br>
+                    </span1></p>
+                    <a href="Code-Editor.html" target="_blank" class="btn">Try Now !</a><br><br>
+                    <p>
+                        <mark>See what happens if we try to display an image that does not exist:</mark>
+                    </p>
+                    <p><span1>
+                        &lt;img src="GB_test.jpg" alt="GBPro Web Image"&gt;<br>
+                    </span1></p>
+                    <a href="Code-Editor.html" target="_blank" class="btn">Try Now !</a><br><br>
+                </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            </div>
+        </div>        
+    </section>            
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
     <a href="#" class="top"><i class='bx bxs-up-arrow'></i></a>
 </body>
 </html>
