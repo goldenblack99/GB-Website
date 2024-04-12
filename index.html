@@ -1,44 +1,44 @@
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <title>GB-Website (V3)</title>
-</head>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title> Loading Animation </title>
+        <link rel="stylesheet" href="style.css">
 
-<body>
+    </head>
+    <body>
         
-    <div class="circle">
-        <p class="count">
-            <span class="percent">0</span>%
-        </p>
-    </div>
-    <div>
-        <a href="Beta.html" class="btn">-START-</a>
-    </div>
+        <div class="Loading">
+            <div class="percent">100%</div>
+            <a href="Beta.html"><div class="text">Click To Start!</div></a>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+        </div>
 
-    
-<script>
+        <script>
+        
+            var percent = document.querySelector('.percent');
+            var progress = document.querySelector('.progress');
+            var text = document.querySelector('.text');
+            var count = 4;
+            var per = 16;
+            var Loading = setInterval(animate, 50);
+            function animate(){
+             if(count == 100 && per == 400){
+                percent.classList.add("text-blink");
+                text.style.display = "block";
+                clearInterval(Loading);
+             }else{
+                per = per + 4;
+                count = count + 1;
+                progress.style.width = per + 'px';
+                percent.textContent = count + '%';
+             }
+            } 
+     
+         </script>
 
-const $percent = document.querySelector('.percent');
-const $circle = document.querySelector('.circle')
-let load = 0;
+    </body>
 
-function update() {
-    load += load < 100;
-    $percent.innerHTML = load;
-    $circle.style.background =
-        `conic-gradient(from 0deg at 50% 50%, #6f7bf7 0%, #9bf8f4 ${load}%, #101012 ${load}%)`;  
-}
-
-setInterval(update, 150);
-
-
-
-</script>
-
-
-
-
-</body>
 </html>
