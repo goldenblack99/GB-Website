@@ -9,7 +9,78 @@ p{
 }
 
 .circle {
-    width: 180px;
+    width: 180px;* {
+  margin: 0;
+  padding: 0;  
+}
+
+body {
+    font-family: fantasy;
+    background: rgb(0, 0, 0);
+}
+
+.Loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.percent {
+    color: rgb(153, 153, 153);
+    font-size: 100px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.text{
+    position: absolute;
+    left: 155px;
+    color: rgb(17,17,17);
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 26px;
+    display: none;
+}
+
+.text-blink {
+    animation: blink .7s ease-in-out .1s;
+}
+
+.progress-bar {
+    width: 400px;
+    height: 25px;
+    background: rgb(17, 17, 17);
+    border-radius: 13px;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.progress {
+    width: 200px;
+    height: 23px;
+    background: linear-gradient( to right, rgb(0, 0, 255), rgb(0, 255, 255));
+    border-radius: 13px;
+}
+
+@keyframes blink {
+    0%{
+        opacity: 1;
+    }
+    25%{
+        opacity: .2;
+    }
+    50%{
+        opacity: 1;
+    }
+    75%{
+        opacity: .2;
+    }
+    100%{
+        opacity: 1;
+    }
+}
     height: 180px;
     background:
         conic-gradient( from 0deg at 50% 50%,
