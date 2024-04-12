@@ -1,15 +1,4 @@
-body{
-    background: rgb(2, 6, 15);;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-}
-p{
-    color: rgb(255, 255, 255);
-}
-
-.circle {
-    width: 180px;* {
+* {
   margin: 0;
   padding: 0;  
 }
@@ -78,93 +67,6 @@ body {
         opacity: .2;
     }
     100%{
-        opacity: 1;
-    }
-}
-    height: 180px;
-    background:
-        conic-gradient( from 0deg at 50% 50%,
-            rgb(0, 0, 255) 0%,
-            rgb(0, 255, 255) 50%,
-            rgb(0, 0, 0) 50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 100px;
-    box-shadow:
-        4px 4px 16px rgb(0, 0, 0),
-        4px 4px 16px rgb(48, 48, 48);
-    animation: spin 1s infinite linear;
-    position: relative;
-}
-
-.count {
-    content: "  ";
-    width: 174px;
-    height: 174px;
-    background: rgb(31, 31, 31);
-    position: absolute;
-    top: 3px;
-    left: 3px;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 100px;
-    box-shadow:
-        4px 4px 16px  black inset,
-        -4px -4px 16px #353535 inset;
-    animation: spin 1s infinite linear reverse;
-}
-
-.percent {
-    font-family: sans-serif;
-    font-size: 4em;
-    color: #ffffff;
-}
-
-.btn{
-    display: inline-block;
-    margin-top: 300px;
-    margin-left: -150px;
-    padding: 12px 28px;
-    background: rgb(0, 255, 255);
-    border-radius: 40px;
-    font-size: 16px;
-    color: rgb(0, 0, 0);
-    letter-spacing: 1px;
-    text-decoration: none;
-    font-weight: 600;
-    opacity: 0;
-    animation: slideTop 1s ease forwards;
-    animation-delay: 15.15s;
-    box-shadow: 0 0 5px rgb(0, 255, 255),
-                0 0 25px rgb(0, 255, 255);
-    z-index: 2;
-}
-.btn:hover{
-    background: rgb(26, 245, 245);
-    color: rgb(0, 0, 0);
-    box-shadow: 0 0 10px rgb(12, 221, 221);
-}
-
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes slideTop {
-    0% {
-        transform: translateY(100px);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateY(0px);
         opacity: 1;
     }
 }
